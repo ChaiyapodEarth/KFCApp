@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C4D065E24556D3F004AE9B8 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D065D24556D3F004AE9B8 /* SigninViewController.swift */; };
+		3C4D065F24556D3F004AE9B8 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D065D24556D3F004AE9B8 /* SigninViewController.swift */; };
+		3C4D066224556E7E004AE9B8 /* SigninAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D066124556E7E004AE9B8 /* SigninAPIManager.swift */; };
+		3C4D066324556E7E004AE9B8 /* SigninAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D066124556E7E004AE9B8 /* SigninAPIManager.swift */; };
+		3C4D066524556E8C004AE9B8 /* SigninAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D066424556E8C004AE9B8 /* SigninAPIClient.swift */; };
+		3C4D066624556E8C004AE9B8 /* SigninAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D066424556E8C004AE9B8 /* SigninAPIClient.swift */; };
+		3C4D06692455700C004AE9B8 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D06682455700C004AE9B8 /* MockData.swift */; };
+		3C4D066A2455700C004AE9B8 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D06682455700C004AE9B8 /* MockData.swift */; };
+		3C4D066D2455703D004AE9B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D066C2455703D004AE9B8 /* User.swift */; };
+		3C4D066E2455703D004AE9B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D066C2455703D004AE9B8 /* User.swift */; };
+		3C4D067124557385004AE9B8 /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D067024557385004AE9B8 /* ErrorHelper.swift */; };
+		3C4D067224557385004AE9B8 /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D067024557385004AE9B8 /* ErrorHelper.swift */; };
+		3C870221244C30030071D78D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C870220244C30030071D78D /* AppDelegate.swift */; };
+		3C870223244C30030071D78D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C870222244C30030071D78D /* SceneDelegate.swift */; };
+		3C870228244C30030071D78D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C870226244C30030071D78D /* Main.storyboard */; };
+		3C87022A244C30040071D78D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C870229244C30040071D78D /* Assets.xcassets */; };
+		3C87022D244C30040071D78D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C87022B244C30040071D78D /* LaunchScreen.storyboard */; };
+		3C870238244C30040071D78D /* KFCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C870237244C30040071D78D /* KFCTests.swift */; };
+		3CB8934D245EACDC00CF44C8 /* RegisterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8934C245EACDC00CF44C8 /* RegisterTableViewController.swift */; };
+		3CB8934E245EACDC00CF44C8 /* RegisterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8934C245EACDC00CF44C8 /* RegisterTableViewController.swift */; };
+		3CB89352245EB59A00CF44C8 /* RegisterAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB89351245EB59A00CF44C8 /* RegisterAPIManager.swift */; };
+		3CB89353245EB59A00CF44C8 /* RegisterAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB89351245EB59A00CF44C8 /* RegisterAPIManager.swift */; };
+		3CB89355245EB5A900CF44C8 /* RegisterAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB89354245EB5A900CF44C8 /* RegisterAPIClient.swift */; };
+		3CB89356245EB5A900CF44C8 /* RegisterAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB89354245EB5A900CF44C8 /* RegisterAPIClient.swift */; };
+		B98B77CD24617C7E00DB4EFC /* ForgotPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B77CC24617C7E00DB4EFC /* ForgotPasswordTableViewController.swift */; };
+		B98B77D02461970D00DB4EFC /* ForgotPasswordAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B77CF2461970D00DB4EFC /* ForgotPasswordAPIManager.swift */; };
+		B98B77D2246197FA00DB4EFC /* ForgotPasswordAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B77D1246197FA00DB4EFC /* ForgotPasswordAPIClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C870234244C30040071D78D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C870215244C30030071D78D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C87021C244C30030071D78D;
+			remoteInfo = KFC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C4D065D24556D3F004AE9B8 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		3C4D066124556E7E004AE9B8 /* SigninAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninAPIManager.swift; sourceTree = "<group>"; };
+		3C4D066424556E8C004AE9B8 /* SigninAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninAPIClient.swift; sourceTree = "<group>"; };
+		3C4D06682455700C004AE9B8 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		3C4D066C2455703D004AE9B8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3C4D067024557385004AE9B8 /* ErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHelper.swift; sourceTree = "<group>"; };
+		3C87021D244C30030071D78D /* KFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C870220244C30030071D78D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C870222244C30030071D78D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3C870227244C30030071D78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C870229244C30040071D78D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C87022C244C30040071D78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C87022E244C30040071D78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C870233244C30040071D78D /* KFCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KFCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C870237244C30040071D78D /* KFCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFCTests.swift; sourceTree = "<group>"; };
+		3C870239244C30040071D78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB8934C245EACDC00CF44C8 /* RegisterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTableViewController.swift; sourceTree = "<group>"; };
+		3CB89351245EB59A00CF44C8 /* RegisterAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAPIManager.swift; sourceTree = "<group>"; };
+		3CB89354245EB5A900CF44C8 /* RegisterAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAPIClient.swift; sourceTree = "<group>"; };
+		B98B77CC24617C7E00DB4EFC /* ForgotPasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordTableViewController.swift; sourceTree = "<group>"; };
+		B98B77CF2461970D00DB4EFC /* ForgotPasswordAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordAPIManager.swift; sourceTree = "<group>"; };
+		B98B77D1246197FA00DB4EFC /* ForgotPasswordAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordAPIClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C87021A244C30030071D78D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C870230244C30040071D78D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C4D065C24556CD7004AE9B8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D065D24556D3F004AE9B8 /* SigninViewController.swift */,
+				3CB8934C245EACDC00CF44C8 /* RegisterTableViewController.swift */,
+				B98B77CC24617C7E00DB4EFC /* ForgotPasswordTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3C4D066024556E5D004AE9B8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B98B77CE246195E400DB4EFC /* ForgotPassword */,
+				3CB89350245EB58100CF44C8 /* Register */,
+				3CB8934F245EB57400CF44C8 /* Signin */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3C4D066724556FF7004AE9B8 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D06682455700C004AE9B8 /* MockData.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		3C4D066B2455702A004AE9B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D066C2455703D004AE9B8 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C4D066F24557366004AE9B8 /* ErrorHelper */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D067024557385004AE9B8 /* ErrorHelper.swift */,
+			);
+			path = ErrorHelper;
+			sourceTree = "<group>";
+		};
+		3C870214244C30030071D78D = {
+			isa = PBXGroup;
+			children = (
+				3C87021F244C30030071D78D /* KFC */,
+				3C870236244C30040071D78D /* KFCTests */,
+				3C87021E244C30030071D78D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C87021E244C30030071D78D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C87021D244C30030071D78D /* KFC.app */,
+				3C870233244C30040071D78D /* KFCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C87021F244C30030071D78D /* KFC */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D066F24557366004AE9B8 /* ErrorHelper */,
+				3C4D066B2455702A004AE9B8 /* Models */,
+				3C4D066724556FF7004AE9B8 /* MockData */,
+				3C4D066024556E5D004AE9B8 /* Services */,
+				3C4D065C24556CD7004AE9B8 /* ViewControllers */,
+				3C870242244C4B190071D78D /* Storyboards */,
+				3C870220244C30030071D78D /* AppDelegate.swift */,
+				3C870222244C30030071D78D /* SceneDelegate.swift */,
+				3C870229244C30040071D78D /* Assets.xcassets */,
+				3C87022B244C30040071D78D /* LaunchScreen.storyboard */,
+				3C87022E244C30040071D78D /* Info.plist */,
+			);
+			path = KFC;
+			sourceTree = "<group>";
+		};
+		3C870236244C30040071D78D /* KFCTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C870237244C30040071D78D /* KFCTests.swift */,
+				3C870239244C30040071D78D /* Info.plist */,
+			);
+			path = KFCTests;
+			sourceTree = "<group>";
+		};
+		3C870242244C4B190071D78D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3C870226244C30030071D78D /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3CB8934F245EB57400CF44C8 /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D066124556E7E004AE9B8 /* SigninAPIManager.swift */,
+				3C4D066424556E8C004AE9B8 /* SigninAPIClient.swift */,
+			);
+			path = Signin;
+			sourceTree = "<group>";
+		};
+		3CB89350245EB58100CF44C8 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				3CB89351245EB59A00CF44C8 /* RegisterAPIManager.swift */,
+				3CB89354245EB5A900CF44C8 /* RegisterAPIClient.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		B98B77CE246195E400DB4EFC /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				B98B77CF2461970D00DB4EFC /* ForgotPasswordAPIManager.swift */,
+				B98B77D1246197FA00DB4EFC /* ForgotPasswordAPIClient.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C87021C244C30030071D78D /* KFC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C87023C244C30040071D78D /* Build configuration list for PBXNativeTarget "KFC" */;
+			buildPhases = (
+				3C870219244C30030071D78D /* Sources */,
+				3C87021A244C30030071D78D /* Frameworks */,
+				3C87021B244C30030071D78D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KFC;
+			productName = KFC;
+			productReference = 3C87021D244C30030071D78D /* KFC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C870232244C30040071D78D /* KFCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C87023F244C30040071D78D /* Build configuration list for PBXNativeTarget "KFCTests" */;
+			buildPhases = (
+				3C87022F244C30040071D78D /* Sources */,
+				3C870230244C30040071D78D /* Frameworks */,
+				3C870231244C30040071D78D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C870235244C30040071D78D /* PBXTargetDependency */,
+			);
+			name = KFCTests;
+			productName = KFCTests;
+			productReference = 3C870233244C30040071D78D /* KFCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C870215244C30030071D78D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Kittinun Chobtham";
+				TargetAttributes = {
+					3C87021C244C30030071D78D = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					3C870232244C30040071D78D = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 3C87021C244C30030071D78D;
+					};
+				};
+			};
+			buildConfigurationList = 3C870218244C30030071D78D /* Build configuration list for PBXProject "KFC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C870214244C30030071D78D;
+			productRefGroup = 3C87021E244C30030071D78D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C87021C244C30030071D78D /* KFC */,
+				3C870232244C30040071D78D /* KFCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C87021B244C30030071D78D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C87022D244C30040071D78D /* LaunchScreen.storyboard in Resources */,
+				3C87022A244C30040071D78D /* Assets.xcassets in Resources */,
+				3C870228244C30030071D78D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C870231244C30040071D78D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C870219244C30030071D78D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C870221244C30030071D78D /* AppDelegate.swift in Sources */,
+				B98B77D2246197FA00DB4EFC /* ForgotPasswordAPIClient.swift in Sources */,
+				3C4D06692455700C004AE9B8 /* MockData.swift in Sources */,
+				3C4D066524556E8C004AE9B8 /* SigninAPIClient.swift in Sources */,
+				3CB89355245EB5A900CF44C8 /* RegisterAPIClient.swift in Sources */,
+				3C870223244C30030071D78D /* SceneDelegate.swift in Sources */,
+				B98B77CD24617C7E00DB4EFC /* ForgotPasswordTableViewController.swift in Sources */,
+				3C4D066224556E7E004AE9B8 /* SigninAPIManager.swift in Sources */,
+				3C4D065E24556D3F004AE9B8 /* SigninViewController.swift in Sources */,
+				B98B77D02461970D00DB4EFC /* ForgotPasswordAPIManager.swift in Sources */,
+				3C4D067124557385004AE9B8 /* ErrorHelper.swift in Sources */,
+				3CB89352245EB59A00CF44C8 /* RegisterAPIManager.swift in Sources */,
+				3CB8934D245EACDC00CF44C8 /* RegisterTableViewController.swift in Sources */,
+				3C4D066D2455703D004AE9B8 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C87022F244C30040071D78D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB89356245EB5A900CF44C8 /* RegisterAPIClient.swift in Sources */,
+				3CB8934E245EACDC00CF44C8 /* RegisterTableViewController.swift in Sources */,
+				3C4D066324556E7E004AE9B8 /* SigninAPIManager.swift in Sources */,
+				3C4D066624556E8C004AE9B8 /* SigninAPIClient.swift in Sources */,
+				3C4D066E2455703D004AE9B8 /* User.swift in Sources */,
+				3C4D065F24556D3F004AE9B8 /* SigninViewController.swift in Sources */,
+				3C4D067224557385004AE9B8 /* ErrorHelper.swift in Sources */,
+				3CB89353245EB59A00CF44C8 /* RegisterAPIManager.swift in Sources */,
+				3C870238244C30040071D78D /* KFCTests.swift in Sources */,
+				3C4D066A2455700C004AE9B8 /* MockData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C870235244C30040071D78D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C87021C244C30030071D78D /* KFC */;
+			targetProxy = 3C870234244C30040071D78D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C870226244C30030071D78D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C870227244C30030071D78D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C87022B244C30040071D78D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C87022C244C30040071D78D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C87023A244C30040071D78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C87023B244C30040071D78D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C87023D244C30040071D78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BLV596STG;
+				INFOPLIST_FILE = KFC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mdt.KFC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3C87023E244C30040071D78D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BLV596STG;
+				INFOPLIST_FILE = KFC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mdt.KFC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3C870240244C30040071D78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BLV596STG;
+				INFOPLIST_FILE = KFCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mdt.KFCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFC.app/KFC";
+			};
+			name = Debug;
+		};
+		3C870241244C30040071D78D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BLV596STG;
+				INFOPLIST_FILE = KFCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mdt.KFCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFC.app/KFC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C870218244C30030071D78D /* Build configuration list for PBXProject "KFC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C87023A244C30040071D78D /* Debug */,
+				3C87023B244C30040071D78D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C87023C244C30040071D78D /* Build configuration list for PBXNativeTarget "KFC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C87023D244C30040071D78D /* Debug */,
+				3C87023E244C30040071D78D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C87023F244C30040071D78D /* Build configuration list for PBXNativeTarget "KFCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C870240244C30040071D78D /* Debug */,
+				3C870241244C30040071D78D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C870215244C30030071D78D /* Project object */;
+}
